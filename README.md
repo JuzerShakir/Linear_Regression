@@ -1,11 +1,12 @@
 # Machine Learning Algorithms
 
 ## Table of Contents
-- [Description](#Description)
-- [Notations](#Notations)
-- [Linear Regression](#Linear_Regression)
 
-### Description
+- [Description](#description)
+- [Notations](#notations)
+- [Linear Regression](#linear_regression)
+
+## Description
 A quick guide and understanding of how famous Machine Learning Algorithms work. Also given links to other study materials in order to understand the concepts more concretly.
 
 ## Notations
@@ -25,4 +26,4 @@ It is the most simple and well known algorithm used in machine learning.
 
 ### Flowchart 
 
-<p align = 'center'><img src = 'Linear_Reg_Flowchart.png' width = '612'></p>
+<p align = 'center'><img src = 'Linear_Reg_Flowchart.png' width = '612', height = '450'></p>
