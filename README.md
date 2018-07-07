@@ -26,4 +26,4 @@ It is the most simple and well known algorithm used in machine learning.
 
 ### Flowchart 
 
-<p align = 'center'><img src = 'Linear_Reg_Flowchart.png' width = '612', height = '450'></p>
+<p align = 'center'><img src = 'Linear_Reg_Flowchart.png' width = '612', height = '425'></p>
