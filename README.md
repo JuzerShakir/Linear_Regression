@@ -21,7 +21,7 @@ A quick guide and understanding of how famous Machine Learning Algorithms work. 
 
 ## Linear Regression
 ### Definition
-A linear equation that models a function such that if we give any `x` to it, it will predict a value `y` , where both `x and y` are input and output varaibles respectively and also numerical.
+A linear equation that models a function such that if we give any `x` to it, it will predict a value `y` , where both `x and y` are input and output varaibles respectively. These are numerical and continous values.
 
 It is the most simple and well known algorithm used in machine learning.
 
@@ -29,10 +29,13 @@ It is the most simple and well known algorithm used in machine learning.
 
 <p align = 'center'><img src = 'Linear_Reg_Flowchart.png' width = '612', height = '425'></p>
 
-### Univariate Linear Regression
-### Definition
-When you have one feature / variable `x` as an input to the function to predict `y`, we call this `Univariate Linear Regression` problem.
+<br>
 
-::: success
-We provide email support to those who have purchased the apps
-:::
+The above Flowchart represents that we choose our training set, feed it to an algorithm, it will learn the patterns and will output a function called `Hypothesis function 'H(x)'`. We then give any `x` value to that function and it will output an estimated `y` value for it.
+
+For historical reasons, this function `H(x)` is called `hypothesis function.`
+
+
+### Univariate Linear Regression
+#### Definition
+When you have one feature / variable `x` as an input to the function to predict `y`, we call this `Univariate Linear Regression` problem.
