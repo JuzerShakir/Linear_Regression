@@ -42,15 +42,15 @@ When you have one feature / variable `x` as an input to the function to predict 
 
 #### Formula
 
-<p align='center'>H(x) = \theta<sub>0</sub> + \theta<sub>1</sub>x</p>
+<p align='center'>H(x) = θ<sub>0</sub> + θ<sub>1</sub>x</p>
 
 Other way of representing this formula as what we are familiar with:
 
 <p align='center'>H(x) = b + mx</p>
 
 > Where :
->- b = \theta<sub>0</sub> 👉 y intercept
->- m = \theta<sub>1</sub> 👉 slope
+>- b = θ<sub>0</sub> 👉 y intercept
+>- m = θ<sub>1</sub> 👉 slope
 >- x = x 👉 feature / input variable
 
 <p align = 'center'><img src = 'Images/Linear_model_representation.jpg'></p>
