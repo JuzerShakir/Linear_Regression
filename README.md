@@ -56,3 +56,10 @@ Other way of representing this formula as what we are familiar with:
 <p align = 'center'><img src = 'Images/Linear_model_representation.jpg'></p>
 <p align = 'center'><a href = 'https://archive.cnx.org/contents/20986bfa-2c2a-47f1-a48a-786122b0c606@3/graphical-analysis-of-one-dimensional-motion'>Source</a></p>
 
+<br>
+
+> **Need Help?**
+<br>
+<a href = 'https://www.khanacademy.org/math/algebra/two-var-linear-equations/slope-intercept-form/v/slope-intercept-form'>Intuition behind linear equation.</a>
+<br>
+<a href = 'https://www.khanacademy.org/math/algebra/two-var-linear-equations/slope-intercept-form/e/slope-from-an-equation-in-slope-intercept-form'>Need to Practice?</a>
