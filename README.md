@@ -107,3 +107,4 @@ So now we have our hypothesis function and we have a way of measuring how well i
 `Gradient Descent` is used to minimize the cost function `J`, minimizing `J` is same as minimizing `MSE` to get best possible fit line to our data.
 
 ##### Formula :
+<p align = 'center'><img src = 'Images/Gradient_Descent.PNG'></p>
