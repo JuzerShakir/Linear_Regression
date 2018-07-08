@@ -70,7 +70,7 @@ All that said, how do we figure out the best possible straight line to the data 
 The bset fit line to our data will be where we have least distance between the `predicted 'y' value` and `trained 'y' value`.
 
 ##### Formula
-<p align = 'center'><img src = 'Images/MSE.png'></p>
+<p align = 'center'><img src = 'Images/MSE.PNG'></p>
 
 > Where :
 >- h(x<sub>i</sub>) 👉 hypothesis function
