@@ -4,7 +4,7 @@
 
 - [Description](#description)
 - [Notations](#notations)
-- [Linear Regression](#linear_regression)
+- [Linear Regression](#linear-regression)
 
 ## Description
 A quick guide and understanding of how famous Machine Learning Algorithms work. Also given links to other study materials in order to understand the concepts more concretly.
