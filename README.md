@@ -91,3 +91,9 @@ The `MSE` function is commonly used and is a reasonable choice and works well fo
 <br>
 Let's subsititute `MSE` function to function `J` :
 <p align = 'center'><img src = 'Images/MSE1.png'></p>
+
+<br>
+<br>
+
+> **Help** 🚩
+> - <a href='https://youtu.be/0kns1gXLYg4'>Intuition behind Cost Function.</a>
