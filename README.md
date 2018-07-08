@@ -108,3 +108,15 @@ So now we have our hypothesis function and we have a way of measuring how well i
 
 ##### Formula :
 <p align = 'center'><img src = 'Images/Gradient_Descent.PNG'></p>
+
+> Where :
+>- `:=` 👉 Is the Assignment Operator
+>- `α` 👉 is `Alpha`, it's the number which is called learning rate. If its too high it may fail to converge and if too low then descending will be slow.
+>- 'θ<sub>j</sub>' 👉 Taking Gradient Descent of a feature or a column of a dataset.
+
+<br>
+<br>
+
+> **Additional Resources** 🚩
+> - <a href='https://youtu.be/YovTqTY-PYY'>Intuition behind Gradient Descent.</a>
+> - <a href='https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivatives/v/partial-derivatives-introduction'>Partial Derivative.</a>
