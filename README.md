@@ -5,6 +5,8 @@
 - [Description](#description)
 - [Notations](#notations)
 - [Linear Regression](#linear-regression)
+    - [Univariate Linear Regression](#univariate-linear-regression)
+    - [Multivariate Linear Regression](#multivariate-linear-regression) 
 
 ## Description
 A quick guide and understanding of how famous Machine Learning Algorithms work. Also given links to other study materials in order to understand the concepts more concretly.
@@ -13,9 +15,11 @@ A quick guide and understanding of how famous Machine Learning Algorithms work. 
 - `m` 👉 Number of Training Examples.
 - `x` 👉 "input" variable / features.
 - `y` 👉 "ouput" variable / "target" variable.
+- `n` 👉 Number of feature variable `(x)`
 - `(x, y)` 👉 One training example.
 - `x`<sub>i</sub> , `y`<sub>i</sub>  👉 i<sup>th</sup> training example.
 - `x`<sub>i<sub>j</sub></sub> 👉 i<sup>th</sup> training example of the j<sup>th</sup> column / feature.
+
 
 -----
 
@@ -58,7 +62,7 @@ Other way of representing this formula as what we are familiar with:
 
 <br>
 
-> **Help** 🚩
+> **Help** 👨🏻‍🏫
 > - <a href = 'https://www.khanacademy.org/math/algebra/two-var-linear-equations/slope-intercept-form/v/slope-intercept-form'>Intuition behind linear equation.</a>
 > - <a href = 'https://www.khanacademy.org/math/algebra/two-var-linear-equations/slope-intercept-form/e/slope-from-an-equation-in-slope-intercept-form'>Need to Practice?</a>
 
@@ -97,7 +101,7 @@ Let's subsititute `MSE` function to function `J` :
 <br>
 <br>
 
-> **Help** 🚩
+> **Help** 👨🏻‍🏫
 > - <a href='https://youtu.be/0kns1gXLYg4'>Intuition behind Cost Function.</a>
 
 -----
@@ -118,7 +122,7 @@ So now we have our hypothesis function and we have a way of measuring how well i
 <br>
 <br>
 
-> **Additional Resources** 🚩
+> **Additional Resources** 👨🏻‍🏫
 > - <a href='https://youtu.be/YovTqTY-PYY'>Intuition behind Gradient Descent.</a>
 > - <a href='https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivatives/v/partial-derivatives-introduction'>Partial Derivative.</a>
 
@@ -146,4 +150,34 @@ Now let's plug these 2 values to our `Gradient Descent`:
 
 > **Note :** 🚩<br>
 > - Cost Function for Linear Regression is always going to be Convex or Bowl Shaped Function, so this function doesn't have any local minimum but one global minimum, thus always converging to global minimum.
-> - The above hypothesis function has 2 parameters, θ<sub>0</sub> & θ<sub>1</sub>, so Gradient Descent will run on each feature, hence here two times for two features to get minimum value of `j`. So if we have `n` features, Gradient Descent will run on all `n` features.
+> - The above hypothesis function has 2 parameters, θ<sub>0</sub> & θ<sub>1</sub>, so Gradient Descent will run on each feature, hence here two times, one for feature and one for base `(y-intercept)`, to get minimum value of `j`. So if we have `n` features, Gradient Descent will run on all `n+1` features.
+
+-----
+
+### Multivariate Linear Regression
+
+> **Linear Algebra** 👨🏻‍🏫
+> - <a href='https://www.khanacademy.org/math/precalculus/vectors-precalc/modal/v/introduction-to-vectors-and-scalars'>Intro to Vectors & Scalars.</a>
+> - <a href=  'https://www.khanacademy.org/math/precalculus/vectors-precalc/modal/a/vector-operations-review'>Combined Vector Operations.</a>
+> - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/v/introduction-to-the-matrix'>Intro to Matrices.</a>
+> - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/a/representing-systems-with-matrices'>Representing linear systems with matrices.</a>
+> - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/v/matrix-addition-and-subtraction-1'>Add & subtract matrices.</a>
+> - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/v/matrix-multiplication-intro'>Multipling matrices.</a>
+> - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/v/identity-matrix'>Intro to Identity Matrix.</a>
+> - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/a/properties-of-matrix-multiplication'>Properties of Matrix Multiplication.</a>
+> - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/v/inverse-matrix-part-1'>Matrix Inverses.</a>
+> - <a href=  'https://www.khanacademy.org/math/linear-algebra/matrix-transformations/matrix-transpose/v/linear-algebra-transpose-of-a-matrix'>Matrix Transpose.</a>
+
+
+#### Definition
+Its same as `Univariate Linear Regression`, except it has more than one feature variable `(x)` to predict target variable `(y)`.
+
+#### Formula:
+Our hypothesis function for `n` = 4 :
+<p align = 'center'><img src = 'Images/Multi_Hypo_Func.PNG'></p>
+
+<br>
+
+> Where :
+>- θ<sub>0</sub> 👉 y intercept
+> - And rest are features `x` to help predict `y` value.
