@@ -113,6 +113,7 @@ So now we have our hypothesis function and we have a way of measuring how well i
 >- `:=` 👉 Is the Assignment Operator
 >- `α` 👉 is `Alpha`, it's the number which is called learning rate. If its too high it may fail to converge and if too low then descending will be slow.
 >- 'θ<sub>j</sub>' 👉 Taking Gradient Descent of a feature or a column of a dataset.
+> - ∂/(∂θ<sub>j</sub>) J(θ<sub>0</sub>,θ<sub>1</sub>) 👉 Taking partial derivative of `MSE` cost function.
 
 <br>
 <br>
@@ -120,3 +121,10 @@ So now we have our hypothesis function and we have a way of measuring how well i
 > **Additional Resources** 🚩
 > - <a href='https://youtu.be/YovTqTY-PYY'>Intuition behind Gradient Descent.</a>
 > - <a href='https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivatives/v/partial-derivatives-introduction'>Partial Derivative.</a>
+
+<br>
+<br>
+
+**Let's apply Gradient Descend to minmize our `MSE` function.**
+<br>
+In order to apply `Gradient Descent`, we need to figure out the partial derivative term.
