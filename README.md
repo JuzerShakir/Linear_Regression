@@ -61,3 +61,19 @@ Other way of representing this formula as what we are familiar with:
 > **Help** 🚩
 > - <a href = 'https://www.khanacademy.org/math/algebra/two-var-linear-equations/slope-intercept-form/v/slope-intercept-form'>Intuition behind linear equation.</a>
 > - <a href = 'https://www.khanacademy.org/math/algebra/two-var-linear-equations/slope-intercept-form/e/slope-from-an-equation-in-slope-intercept-form'>Need to Practice?</a>
+
+#### Cost Function
+All that said, how do we figure out the best possible straight line to the data that we feed?
+
+**This is where `Cost Function` will help us:**
+
+The bset fit line to our data will be where we have least distance between the `predicted 'y' value` and `trained 'y' value`.
+
+##### Formula
+<p align = 'center'><img src = 'Images/MSE.png'></p>
+
+> Where :
+>- h(x<sub>i</sub>) 👉 hypothesis function
+>- y<sub>i</sub> 👉 actual values of `y`
+>- 1/m 👉 gives Mean of Squared Errors
+>- 1/2 👉 Mean is halved as a convenience for the computation of the `Gradient Descent`.
