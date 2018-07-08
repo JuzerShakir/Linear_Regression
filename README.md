@@ -145,4 +145,5 @@ Now let's plug these 2 values to our `Gradient Descent`:
 <br>
 
 > **Note :** 🚩<br>
-> Cost Function for Linear Regression is always going to be Convex or Bowl Shaped Function, so this function doesn't have any local minimum but one global minimum, thus always converging to global minimum.
+> - Cost Function for Linear Regression is always going to be Convex or Bowl Shaped Function, so this function doesn't have any local minimum but one global minimum, thus always converging to global minimum.
+> - The above hypothesis function has 2 parameters, θ<sub>0</sub> & θ<sub>1</sub>, so Gradient Descent will run on each feature, hence here two times for two features to get minimum value of `j`. So if we have `n` features, Gradient Descent will run on all `n` features.
