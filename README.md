@@ -70,7 +70,7 @@ All that said, how do we figure out the best possible straight line to the data 
 The best fit line to our data will be where we have least distance between the `predicted 'y' value` and `trained 'y' value`.
 
 ##### Formula :
-<p align = 'center'><img src = 'Images/MSE.PNG'></p>
+<p align = 'center'><img src = 'Images/MSE.png'></p>
 
 > Where :
 >- h(x<sub>i</sub>) 👉 hypothesis function
@@ -79,16 +79,15 @@ The best fit line to our data will be where we have least distance between the `
 >- 1/2 👉 Mean is halved as a convenience for the computation of the `Gradient Descent`.
 
 
-The above formula represnts this:<br>
-Find me the best fit line to the data so that the `squared errors` between `predicted values` and `actual values` of training set times `1/2m` is minimized.
+The above formula takes the sum of the distances between <i>`predicted values` and `actual values` of training set, sqaure it, take the average and multiply it by `1/2`.</i>
 <br>
 <br>
 This cost function is also called as `Squared Error Function` or `Mean Squared Error`.
 <br>
 <br>
 🙋‍ Why do we take squares of the error's?<br>
-The `MSE` function is commonly used and is a rasonable choice and works well for most Regression problems.
+The `MSE` function is commonly used and is a reasonable choice and works well for most Regression problems.
 <br>
 <br>
 Let's subsititute `MSE` function to function `J` :
-<p align = 'center'><img src = 'Images/MSE1.PNG'></p>
+<p align = 'center'><img src = 'Images/MSE1.png'></p>
