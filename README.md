@@ -67,9 +67,9 @@ All that said, how do we figure out the best possible straight line to the data 
 
 **This is where `Cost Function` will help us:**
 
-The bset fit line to our data will be where we have least distance between the `predicted 'y' value` and `trained 'y' value`.
+The best fit line to our data will be where we have least distance between the `predicted 'y' value` and `trained 'y' value`.
 
-##### Formula
+##### Formula :
 <p align = 'center'><img src = 'Images/MSE.PNG'></p>
 
 > Where :
@@ -77,3 +77,18 @@ The bset fit line to our data will be where we have least distance between the `
 >- y<sub>i</sub> 👉 actual values of `y`
 >- 1/m 👉 gives Mean of Squared Errors
 >- 1/2 👉 Mean is halved as a convenience for the computation of the `Gradient Descent`.
+
+
+The above formula represnts this:<br>
+Find me the best fit line to the data so that the `squared errors` between `predicted values` and `actual values` of training set times `1/2m` is minimized.
+<br>
+<br>
+This cost function is also called as `Squared Error Function` or `Mean Squared Error`.
+<br>
+<br>
+🙋‍ Why do we take squares of the error's?<br>
+The `MSE` function is commonly used and is a rasonable choice and works well for most Regression problems.
+<br>
+<br>
+Let's subsititute `MSE` function to function `J` :
+<p align = 'center'><img src = 'Images/MSE1.PNG'></p>
