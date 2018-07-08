@@ -101,7 +101,7 @@ Let's subsititute `MSE` function to function `J` :
 <br>
 <br>
 
-> **Help** 👨🏻‍🏫
+> **Help** ✍🏼 
 > - <a href='https://youtu.be/0kns1gXLYg4'>Intuition behind Cost Function.</a>
 
 -----
@@ -122,7 +122,7 @@ So now we have our hypothesis function and we have a way of measuring how well i
 <br>
 <br>
 
-> **Additional Resources** 👨🏻‍🏫
+> **Additional Resources** ✍🏼 
 > - <a href='https://youtu.be/YovTqTY-PYY'>Intuition behind Gradient Descent.</a>
 > - <a href='https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivatives/v/partial-derivatives-introduction'>Partial Derivative.</a>
 
@@ -156,7 +156,7 @@ Now let's plug these 2 values to our `Gradient Descent`:
 
 ### Multivariate Linear Regression
 
-> **Linear Algebra** 👨🏻‍🏫
+> **Linear Algebra** ✍🏼 
 > - <a href='https://www.khanacademy.org/math/precalculus/vectors-precalc/modal/v/introduction-to-vectors-and-scalars'>Intro to Vectors & Scalars.</a>
 > - <a href=  'https://www.khanacademy.org/math/precalculus/vectors-precalc/modal/a/vector-operations-review'>Combined Vector Operations.</a>
 > - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/v/introduction-to-the-matrix'>Intro to Matrices.</a>
