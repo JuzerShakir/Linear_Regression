@@ -125,6 +125,24 @@ So now we have our hypothesis function and we have a way of measuring how well i
 <br>
 <br>
 
-**Let's apply Gradient Descend to minmize our `MSE` function.**
+**Now Let's apply Gradient Descend to minmize our `MSE` function.**
 <br>
-In order to apply `Gradient Descent`, we need to figure out the partial derivative term.
+In order to apply `Gradient Descent`, we need to figure out the partial derivative term.<br>
+So let's solve partial derivative of cost function `J`.
+
+<br>
+
+<p align = 'center'><img src = 'Images/Solving_Partial_Derivative.PNG'></p>
+
+<br>
+
+Now let's plug these 2 values to our `Gradient Descent`:
+
+<br>
+
+<p align = 'center'><img src = 'Images/Final_Gradient_Descent.PNG'></p>
+
+<br>
+
+> **Note :** 🚩<br>
+> Cost Function for Linear Regression is always going to be Convex or Bowl Shaped Function, so this function doesn't have any local minimum but one global minimum, thus always converging to global minimum.
