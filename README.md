@@ -6,7 +6,8 @@
 - [Notations](#notations)
 - [Linear Regression](#linear-regression)
     - [Univariate Linear Regression](#univariate-linear-regression)
-    - [Multivariate Linear Regression](#multivariate-linear-regression) 
+    - [Multivariate Linear Regression](#multivariate-linear-regression)
+        - [Feature Scaling and Mean Normalization](#feature-scaling-and-mean-normalization)
 
 ## Description
 A quick guide and understanding of how famous Machine Learning Algorithms work. Also given links to other study materials in order to understand the concepts more concretly.
