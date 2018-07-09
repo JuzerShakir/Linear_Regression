@@ -62,7 +62,7 @@ Other way of representing this formula as what we are familiar with:
 
 <br>
 
-> **Help** 👨🏻‍🏫
+> **Help** ✍🏼 
 > - <a href = 'https://www.khanacademy.org/math/algebra/two-var-linear-equations/slope-intercept-form/v/slope-intercept-form'>Intuition behind linear equation.</a>
 > - <a href = 'https://www.khanacademy.org/math/algebra/two-var-linear-equations/slope-intercept-form/e/slope-from-an-equation-in-slope-intercept-form'>Need to Practice?</a>
 
@@ -163,7 +163,7 @@ Now let's plug these 2 values to our `Gradient Descent`:
 > - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/a/representing-systems-with-matrices'>Representing linear systems with matrices.</a>
 > - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/v/matrix-addition-and-subtraction-1'>Add & subtract matrices.</a>
 > - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/v/matrix-multiplication-intro'>Multipling matrices.</a>
-> - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/v/identity-matrix'>Intro to Identity Matrix.</a>
+> - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/v/identity-matrix'>Identity Matrix.</a>
 > - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/a/properties-of-matrix-multiplication'>Properties of Matrix Multiplication.</a>
 > - <a href=  'https://www.khanacademy.org/math/precalculus/precalc-matrices/modal/v/inverse-matrix-part-1'>Matrix Inverses.</a>
 > - <a href=  'https://www.khanacademy.org/math/linear-algebra/matrix-transformations/matrix-transpose/v/linear-algebra-transpose-of-a-matrix'>Matrix Transpose.</a>
@@ -181,3 +181,37 @@ Our hypothesis function for `n` = 4 :
 > Where :
 >- θ<sub>0</sub> 👉 y intercept
 > - And rest are features `x` to help predict `y` value.
+>> **Intuition:**<br>
+>>In order to develop an intuition about this function, let's imagine that this function represents price of a house `(y)` based on the features given `(x)`, then we can think of this function as:
+>> - θ<sub>0</sub> as the basic price of a house.
+>> - θ<sub>1</sub> as price/m<sup>2</sup>.
+>> - x<sub>1</sub> as area of a house (m<sup>2</sup>).
+>> - θ<sub>2</sub> as price/floor.
+>> - x<sub>2</sub> as number of floors.
+>> - etc _(You get the idea)_
+
+<br>
+<br>
+
+Let's set all the parameters:
+<p align='center'><b> θ<sub>0</sub>, θ<sub>1</sub>, θ<sub>2</sub>, θ<sub>3</sub>.......θ<sub>n</sub> = θ </b></p>
+<br>
+And Let's set all the features:
+<p align='center'><b> x<sub>0</sub>, x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>.......x<sub>n</sub> = x </b></p>
+<br>
+
+> Where :
+>- θ 👉 will be `n+1` dimensional vector because we have θ<sub>0</sub> which is not a feature.
+> - x<sub>0</sub> 👉 is added just for convenience so that we can take matrix multiplication of `θ` as θ<sup>T</sup> and `x` and we will set its value to 1, so this doesn't change the values.
+> - x 👉 will also be `n+1` dimensional vector.
+
+<br>
+<br>
+
+#### Cost Function :
+
+So, 
+<p align='center'>J(θ<sub>0</sub>, θ<sub>1</sub>, θ<sub>2</sub>, θ<sub>3</sub>.......θ<sub>n</sub>) = J(θ)</p>
+<br>
+Where,
+<p align = 'center'><img src = 'Images/Multi_Linear_Cost_Func.PNG'></p>
