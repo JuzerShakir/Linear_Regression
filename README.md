@@ -233,8 +233,41 @@ Where,
 <br>
 <br>
 
-**If we had 2 features, this is how gradient descent would run on each parameter:**
+**For Example : If we had 2 features, this is how gradient descent would run on each parameter:**
 
 <br>
 
 <p align = 'center'><img src = 'Images/Param_Final_Gradient_Descent_Multi_Linear.PNG'></p>
+
+<br>
+<br>
+
+#### Feature Scaling and Mean Normalization :
+
+We can speed up `Gradient Descent` by having each of our input values in roughly the same range. This is because `0` will descend quickly on small ranges and slowly on large ranges. If we have large ranges, it will oscilate inefficiently down to optimum (minimum) when the variables are very uneven.
+
+<br>
+
+The way to prevent this is to modify the ranges of our input variables so that they are all roughly the same. Ideally between :
+<p align = 'center'>-1  ≤  x<sub>i</sub>  ≤  1</p>
+<p align = 'center'>OR</p>
+<p align = 'center'>-0.5  ≤  x<sub>i</sub>  ≤  0.5</p>
+
+<br>
+
+These aren't exact requirements, we are only trying to speed things up. The goal is to get all input variables into roughly one of these ranges.<br>
+This can make `Gradient Descent` run much faster and converge in a lot few iterations.
+
+<br>
+
+<br>Two techniques to help with this are `Feature Scaling` and `Mean Normalization`.</b>
+
+- `Feature Scaling` involves diving the input values by the range (i.e max value - min value) of the input variable, resulting in a new values.
+<p align = 'center'><img src = 'Images/Feature_Scaling.PNG'></p>
+
+- `Mean Normalization` involves subtracting the average of a feature variable from the values of the feature, dividing by _range_ of values or by _standard deviation_, resulting in a new values.
+<p align = 'center'><img src = 'Images/Mean_Normalization.PNG'></p>
+
+> Where:
+> - μ<sub>j</sub> 👉 Average of a Feature variable `j`.
+> - s<sub>i</sub> 👉 Either `Range` or `Standard Deviation` of a Feature `j`.
