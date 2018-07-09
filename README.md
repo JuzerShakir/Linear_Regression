@@ -220,4 +220,21 @@ Where,
 <br>
 
 #### Gradeint Descent :
+
 <p align = 'center'><img src = 'Images/Multi_Linear_Gradient_Descent.PNG'></p>
+
+<br>
+<br>
+
+**Appling Gradient Descend to minmize our `MSE` function after solving partial derivative of J(θ), we get :**
+<br>
+<p align = 'center'><img src = 'Images/Final_Gradient_Descent_Multi_Linear.PNG'></p>
+
+<br>
+<br>
+
+**If we had 2 features, this is how gradient descent would run on each parameter:**
+
+<br>
+
+<p align = 'center'><img src = 'Images/Param_Final_Gradient_Descent_Multi_Linear.PNG'></p>
