@@ -202,7 +202,7 @@ And Let's set all the features:
 
 > Where :
 >- θ 👉 will be `n+1` dimensional vector because we have θ<sub>0</sub> which is not a feature.
-> - x<sub>0</sub> 👉 is added just for convenience so that we can take matrix multiplication of `θ` as θ<sup>T</sup> and `x` and we will set its value to 1, so this doesn't change the values.
+> - x<sub>0</sub> 👉 is added just for convenience so that we can take matrix multiplication of `θ` as θ<sup>T</sup> and `x` and we will set x<sub>0</sub> value to 1, so this doesn't change the values.
 > - x 👉 will also be `n+1` dimensional vector.
 
 <br>
@@ -215,3 +215,9 @@ So,
 <br>
 Where,
 <p align = 'center'><img src = 'Images/Multi_Linear_Cost_Func.PNG'></p>
+
+<br>
+<br>
+
+#### Gradeint Descent :
+<p align = 'center'><img src = 'Images/Multi_Linear_Gradient_Descent.PNG'></p>
