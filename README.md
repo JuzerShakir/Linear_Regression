@@ -1,16 +1,26 @@
-# Machine Learning Algorithms
+# Linear Regression
 
 ## Table of Contents
 
 - [Description](#description)
 - [Notations](#notations)
-- [Linear Regression](#linear-regression)
-    - [Univariate Linear Regression](#univariate-linear-regression)
-    - [Multivariate Linear Regression](#multivariate-linear-regression)
-        - [Feature Scaling and Mean Normalization](#feature-scaling-and-mean-normalization)
+- [Definition](#definition)
+- [Flowchart](#flowchart)
+- [Univariate Linear Regression](#univariate-linear-regression)
+    - [Definition](#definition-for-univariate-linear-regression)
+    - [Formula](#formula-for-univariate-linear-regression)
+    - [Cost Function](#cost-function-for-univariate-linear-regression)
+    - [Gradient Descent](#gradient-descent-for-univariate-linear-regression)
+- [Multivariate Linear Regression](#multivariate-linear-regression)
+    - [Definition](#definition-for-multivariate-linear-regression)
+    - [Formula](#formula-for-multivariate-linear-regression)
+    - [Cost Function](#cost-function-for-multivariate-linear-regression)
+    - [Gradeint Descent](#gradeint-descent-for-multivariate-linear-regression)
+- [Feature Scaling and Mean Normalization](#feature-scaling-and-mean-normalization)
+
 
 ## Description
-A quick guide and understanding of how famous Machine Learning Algorithms work. Also given links to other study materials in order to understand the concepts more concretly.
+A Mathematical intuition and quick guide and understanding of how Linear Regression Algorithms works. Given links to other study materials in order to understand the concepts more concretly.
 
 ## Notations
 - `m` 👉 Number of Training Examples.
@@ -21,16 +31,14 @@ A quick guide and understanding of how famous Machine Learning Algorithms work. 
 - `x`<sub>i</sub> , `y`<sub>i</sub>  👉 i<sup>th</sup> training example.
 - `x`<sub>i<sub>j</sub></sub> 👉 i<sup>th</sup> training example of the j<sup>th</sup> column / feature.
 
-
 -----
 
-## Linear Regression
-### Definition
+## Definition
 A linear equation that models a function such that if we give any `x` to it, it will predict a value `y` , where both `x and y` are input and output varaibles respectively. These are numerical and continous values.
 
 It is the most simple and well known algorithm used in machine learning.
 
-### Flowchart 
+## Flowchart 
 
 <p align = 'center'><img src = 'Images/Linear_Reg_Flowchart.png' width = '612', height = '425'></p>
 
@@ -41,11 +49,11 @@ The above Flowchart represents that we choose our training set, feed it to an al
 For historical reasons, this function `H(x)` is called `hypothesis function.`
 
 
-### Univariate Linear Regression
-#### Definition
+## Univariate Linear Regression
+### Definition for Univariate Linear Regression
 When you have one feature / variable `x` as an input to the function to predict `y`, we call this `Univariate Linear Regression` problem.
 
-#### Formula
+### Formula for Univariate Linear Regression
 
 <p align='center'>H(x) = θ<sub>0</sub> + θ<sub>1</sub>x</p>
 
@@ -69,14 +77,14 @@ Other way of representing this formula as what we are familiar with:
 
 -----
 
-#### Cost Function
+### Cost Function for Univariate Linear Regression
 All that said, how do we figure out the best possible straight line to the data that we feed?
 
 **This is where `Cost Function` will help us:**
 
 The best fit line to our data will be where we have least distance between the `predicted 'y' value` and `trained 'y' value`.
 
-##### Formula :
+#### Formula for Cost Function
 <p align = 'center'><img src = 'Images/MSE.png'></p>
 
 > Where :
@@ -107,11 +115,11 @@ Let's subsititute `MSE` function to function `J` :
 
 -----
 
-#### Gradient Descent
+### Gradient Descent for Univariate Linear Regression
 So now we have our hypothesis function and we have a way of measuring how well it fits into the data. Now we need to estimate the parameters in the hypothesis function. That's where `Gradient Descent` comes in.<br>
 `Gradient Descent` is used to minimize the cost function `J`, minimizing `J` is same as minimizing `MSE` to get best possible fit line to our data.
 
-##### Formula :
+#### Formula for Gradient Descent
 <p align = 'center'><img src = 'Images/Gradient_Descent.PNG'></p>
 
 > Where :
@@ -155,7 +163,7 @@ Now let's plug these 2 values to our `Gradient Descent`:
 
 -----
 
-### Multivariate Linear Regression
+## Multivariate Linear Regression
 
 > **Linear Algebra** ✍🏼 
 > - <a href='https://www.khanacademy.org/math/precalculus/vectors-precalc/modal/v/introduction-to-vectors-and-scalars'>Intro to Vectors & Scalars.</a>
@@ -170,10 +178,10 @@ Now let's plug these 2 values to our `Gradient Descent`:
 > - <a href=  'https://www.khanacademy.org/math/linear-algebra/matrix-transformations/matrix-transpose/v/linear-algebra-transpose-of-a-matrix'>Matrix Transpose.</a>
 
 
-#### Definition
+### Definition for Multivariate Linear Regression
 Its same as `Univariate Linear Regression`, except it has more than one feature variable `(x)` to predict target variable `(y)`.
 
-#### Formula:
+### Formula for Multivariate Linear Regression
 Our hypothesis function for `n` = 4 :
 <p align = 'center'><img src = 'Images/Multi_Hypo_Func.PNG'></p>
 
@@ -209,7 +217,7 @@ And Let's set all the features:
 <br>
 <br>
 
-#### Cost Function :
+### Cost Function for Multivariate Linear Regression
 
 So, 
 <p align='center'>J(θ<sub>0</sub>, θ<sub>1</sub>, θ<sub>2</sub>, θ<sub>3</sub>.......θ<sub>n</sub>) = J(θ)</p>
@@ -220,7 +228,7 @@ Where,
 <br>
 <br>
 
-#### Gradeint Descent :
+### Gradeint Descent for Multivariate Linear Regression
 
 <p align = 'center'><img src = 'Images/Multi_Linear_Gradient_Descent.PNG'></p>
 
@@ -243,7 +251,7 @@ Where,
 <br>
 <br>
 
-#### Feature Scaling and Mean Normalization
+### Feature Scaling and Mean Normalization
 
 We can speed up `Gradient Descent` by having each of our input values in roughly the same range. This is because `0` will descend quickly on small ranges and slowly on large ranges. If we have large ranges, it will oscilate inefficiently down to optimum (minimum) when the variables are very uneven.
 
