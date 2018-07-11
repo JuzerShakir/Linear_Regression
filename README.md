@@ -48,6 +48,7 @@ The above Flowchart represents that we choose our training set, feed it to an al
 
 For historical reasons, this function `H(x)` is called `hypothesis function.`
 
+-----
 
 ## Univariate Linear Regression
 ### Definition for Univariate Linear Regression
@@ -75,7 +76,6 @@ Other way of representing this formula as what we are familiar with:
 > - <a href = 'https://www.khanacademy.org/math/algebra/two-var-linear-equations/slope-intercept-form/v/slope-intercept-form'>Intuition behind linear equation.</a>
 > - <a href = 'https://www.khanacademy.org/math/algebra/two-var-linear-equations/slope-intercept-form/e/slope-from-an-equation-in-slope-intercept-form'>Need to Practice?</a>
 
------
 
 ### Cost Function for Univariate Linear Regression
 All that said, how do we figure out the best possible straight line to the data that we feed?
@@ -113,7 +113,6 @@ Let's subsititute `MSE` function to function `J` :
 > **Help** ✍🏼 
 > - <a href='https://youtu.be/0kns1gXLYg4'>Intuition behind Cost Function.</a>
 
------
 
 ### Gradient Descent for Univariate Linear Regression
 So now we have our hypothesis function and we have a way of measuring how well it fits into the data. Now we need to estimate the parameters in the hypothesis function. That's where `Gradient Descent` comes in.<br>
@@ -249,7 +248,8 @@ Where,
 <p align = 'center'><img src = 'Images/Param_Final_Gradient_Descent_Multi_Linear.PNG'></p>
 
 <br>
-<br>
+
+------
 
 ### Feature Scaling and Mean Normalization
 
