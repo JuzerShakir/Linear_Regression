@@ -1,7 +1,6 @@
 # Linear Regression
 
 ## Table of Contents
-
 - [Description](#description)
 - [Notations](#notations)
 - [Definition](#definition)
@@ -40,7 +39,7 @@ It is the most simple and well known algorithm used in machine learning.
 
 ## Flowchart 
 
-<p align = 'center'><img src = 'Images/Linear_Reg_Flowchart.png' width = '612', height = '425'></p>
+<p align = 'center'><img src = 'Formulas/Linear_Reg_Flowchart.png' width = '612', height = '425'></p>
 
 <br>
 
@@ -67,7 +66,7 @@ Other way of representing this formula as what we are familiar with:
 >- m = θ<sub>1</sub> 👉 slope
 >- x = x 👉 feature / input variable
 
-<p align = 'center'><img src = 'Images/Linear_model_representation.jpg'></p>
+<p align = 'center'><img src = 'Formulas/Linear_model_representation.jpg'></p>
 <p align = 'center'><a href = 'https://archive.cnx.org/contents/20986bfa-2c2a-47f1-a48a-786122b0c606@3/graphical-analysis-of-one-dimensional-motion'>Source</a></p>
 
 <br>
@@ -85,7 +84,7 @@ All that said, how do we figure out the best possible straight line to the data 
 The best fit line to our data will be where we have least distance between the `predicted 'y' value` and `trained 'y' value`.
 
 #### Formula for Cost Function
-<p align = 'center'><img src = 'Images/MSE.png'></p>
+<p align = 'center'><img src = 'Formulas/MSE.png'></p>
 
 > Where :
 >- h(x<sub>i</sub>) 👉 hypothesis function
@@ -105,7 +104,7 @@ The `MSE` function is commonly used and is a reasonable choice and works well fo
 <br>
 <br>
 Let's subsititute `MSE` function to function `J` :
-<p align = 'center'><img src = 'Images/MSE1.png'></p>
+<p align = 'center'><img src = 'Formulas/MSE1.png'></p>
 
 <br>
 <br>
@@ -119,7 +118,7 @@ So now we have our hypothesis function and we have a way of measuring how well i
 `Gradient Descent` is used to minimize the cost function `J`, minimizing `J` is same as minimizing `MSE` to get best possible fit line to our data.
 
 #### Formula for Gradient Descent
-<p align = 'center'><img src = 'Images/Gradient_Descent.PNG'></p>
+<p align = 'center'><img src = 'Formulas/Gradient_Descent.PNG'></p>
 
 > Where :
 >- `:=` 👉 Is the Assignment Operator
@@ -144,7 +143,7 @@ So let's solve partial derivative of cost function `J`.
 
 <br>
 
-<p align = 'center'><img src = 'Images/Solving_Partial_Derivative.PNG'></p>
+<p align = 'center'><img src = 'Formulas/Solving_Partial_Derivative.PNG'></p>
 
 <br>
 
@@ -152,7 +151,7 @@ Now let's plug these 2 values to our `Gradient Descent`:
 
 <br>
 
-<p align = 'center'><img src = 'Images/Final_Gradient_Descent.PNG'></p>
+<p align = 'center'><img src = 'Formulas/Final_Gradient_Descent.PNG'></p>
 
 <br>
 
@@ -182,7 +181,7 @@ Its same as `Univariate Linear Regression`, except it has more than one feature 
 
 ### Formula for Multivariate Linear Regression
 Our hypothesis function for `n` = 4 :
-<p align = 'center'><img src = 'Images/Multi_Hypo_Func.PNG'></p>
+<p align = 'center'><img src = 'Formulas/Multi_Hypo_Func.PNG'></p>
 
 <br>
 
@@ -222,21 +221,21 @@ So,
 <p align='center'>J(θ<sub>0</sub>, θ<sub>1</sub>, θ<sub>2</sub>, θ<sub>3</sub>.......θ<sub>n</sub>) = J(θ)</p>
 <br>
 Where,
-<p align = 'center'><img src = 'Images/Multi_Linear_Cost_Func.PNG'></p>
+<p align = 'center'><img src = 'Formulas/Multi_Linear_Cost_Func.PNG'></p>
 
 <br>
 <br>
 
 ### Gradeint Descent for Multivariate Linear Regression
 
-<p align = 'center'><img src = 'Images/Multi_Linear_Gradient_Descent.PNG'></p>
+<p align = 'center'><img src = 'Formulas/Multi_Linear_Gradient_Descent.PNG'></p>
 
 <br>
 <br>
 
 **Appling Gradient Descend to minmize our `MSE` function after solving partial derivative of J(θ), we get :**
 <br>
-<p align = 'center'><img src = 'Images/Final_Gradient_Descent_Multi_Linear.PNG'></p>
+<p align = 'center'><img src = 'Formulas/Final_Gradient_Descent_Multi_Linear.PNG'></p>
 
 <br>
 <br>
@@ -245,7 +244,7 @@ Where,
 
 <br>
 
-<p align = 'center'><img src = 'Images/Param_Final_Gradient_Descent_Multi_Linear.PNG'></p>
+<p align = 'center'><img src = 'Formulas/Param_Final_Gradient_Descent_Multi_Linear.PNG'></p>
 
 <br>
 
@@ -272,10 +271,10 @@ This can make `Gradient Descent` run much faster and converge in a lot few itera
 <br>Two techniques to help with this are `Feature Scaling` and `Mean Normalization`.</b>
 
 - `Feature Scaling` involves diving the input values by the range (i.e max value - min value) of the input variable, resulting in a new values.
-<p align = 'center'><img src = 'Images/Feature_Scaling.PNG'></p>
+<p align = 'center'><img src = 'Formulas/Feature_Scaling.PNG'></p>
 
 - `Mean Normalization` involves subtracting the average of a feature variable from the values of the feature, dividing by _range_ of values or by _standard deviation_, resulting in a new values.
-<p align = 'center'><img src = 'Images/Mean_Normalization.PNG'></p>
+<p align = 'center'><img src = 'Formulas/Mean_Normalization.PNG'></p>
 
 > Where:
 > - μ<sub>j</sub> 👉 Average of a Feature variable `j`.
