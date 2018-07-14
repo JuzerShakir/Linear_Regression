@@ -21,7 +21,9 @@
     - [High Bias](#high-bias)
     - [Just Right](#just-right)
     - [High Variance](#high-variance)
-        - [Resolving High Variance](#resolving-high-variance)
+- [Resolving High Variance](#resolving-high-variance)
+    - [Cost Function](#cost-function-for-regulization)
+    - [Gradeint Descent](#gradient-descent-for-regulization)
 
 ## Description
 A Mathematical intuition and quick guide and understanding of how Linear Regression Algorithms works. Given links to other study materials in order to understand the concepts more concretly.
@@ -331,7 +333,12 @@ We see that even though the fitted curve passes through the data perfectly, we w
 
 <br>
 
-#### Resolving High Variance
+## Resolving High Variance
 
+### Cost Function for Regulization
 
 ------
+
+### Gradient Descent for Regulization
+
+-----
