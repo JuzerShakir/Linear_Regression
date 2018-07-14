@@ -1,6 +1,7 @@
 # Linear Regression
 
 ## Table of Contents
+
 - [Description](#description)
 - [Notations](#notations)
 - [Definition](#definition)
@@ -14,9 +15,9 @@
     - [Definition](#definition-for-multivariate-linear-regression)
     - [Formula](#formula-for-multivariate-linear-regression)
     - [Cost Function](#cost-function-for-multivariate-linear-regression)
-    - [Gradeint Descent](#gradeint-descent-for-multivariate-linear-regression)
+    - [Gradeint Descent](#gradient-descent-for-multivariate-linear-regression)
 - [Feature Scaling and Mean Normalization](#feature-scaling-and-mean-normalization)
-
+- [Bias - Variance](#bias---variance)
 
 ## Description
 A Mathematical intuition and quick guide and understanding of how Linear Regression Algorithms works. Given links to other study materials in order to understand the concepts more concretly.
@@ -226,7 +227,7 @@ Where,
 <br>
 <br>
 
-### Gradeint Descent for Multivariate Linear Regression
+### Gradient Descent for Multivariate Linear Regression
 
 <p align = 'center'><img src = 'Formulas/Multi_Linear_Gradient_Descent.PNG'></p>
 
@@ -250,7 +251,7 @@ Where,
 
 ------
 
-### Feature Scaling and Mean Normalization
+## Feature Scaling and Mean Normalization
 
 We can speed up `Gradient Descent` by having each of our input values in roughly the same range. This is because `0` will descend quickly on small ranges and slowly on large ranges. If we have large ranges, it will oscilate inefficiently down to optimum (minimum) when the variables are very uneven.
 
@@ -279,3 +280,7 @@ This can make `Gradient Descent` run much faster and converge in a lot few itera
 > Where:
 > - μ<sub>j</sub> 👉 Average of a Feature variable `j`.
 > - s<sub>i</sub> 👉 Either `Range` or `Standard Deviation` of a Feature `j`.
+
+-----
+
+## Bias - Variance
