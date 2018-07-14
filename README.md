@@ -344,6 +344,8 @@ There are 2 main options to address the issue of Overfitting:
     - Manually select which features to keep.
     - Use `model selection` algorithm.
 
+<br>
+
 ### Cost Function for Regularization
 
 If we have overfitting from our `hypothesis function`, for example like in figure 3, we can reduce the weight that some of the terms in our function carry by increasing their cost.
@@ -376,5 +378,20 @@ Using the above cost function with the extra summation, we can smooth the output
 ------
 
 ### Gradient Descent for Regularization
+
+We will modify our gradient descent function to separate out θ<sub>0</sub> from rest of the parameters because we do not want to penalize θ<sub>0</sub>.
+
+<br>
+
+<p align = 'center'><img src = 'Formulas/regularized_gradient_descent.PNG'></p><br>
+
+The term λ/m times θ<sub>j</sub> performs our regularization.<br>
+
+With some manipulation our updated Gradient Descent for θ<sub>j</sub> can also be represented as:<br>
+
+<p align = 'center'><img src = 'Formulas/regularized_gradient_descent_simple.PNG'></p><br>
+
+The first term in the equation <img src = 'Formulas/regularization_first_term.PNG'> will always be less than 1. Intuitively you can see it as reducing the value θ<sub>j</sub> by some amount on every update. And the second term is exactly the same as it was in `Gradient Descent` without applying regularization.
+
 
 -----
