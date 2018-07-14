@@ -22,8 +22,8 @@
     - [Just Right](#just-right)
     - [High Variance](#high-variance)
 - [Resolving High Variance](#resolving-high-variance)
-    - [Cost Function](#cost-function-for-regulization)
-    - [Gradeint Descent](#gradient-descent-for-regulization)
+    - [Cost Function](#cost-function-for-regularization)
+    - [Gradeint Descent](#gradient-descent-for-regularization)
 
 ## Description
 A Mathematical intuition and quick guide and understanding of how Linear Regression Algorithms works. Given links to other study materials in order to understand the concepts more concretly.
@@ -337,17 +337,44 @@ We see that even though the fitted curve passes through the data perfectly, we w
 
 There are 2 main options to address the issue of Overfitting:
 
-- **Regulization**
+- **Regularization**
     - Keep all features, but reduce the magnitude of parameters θ<sub>j</sub>.
     - It works well when we have a lot of slightly useful features.
 - **Reduce number of features**
     - Manually select which features to keep.
     - Use `model selection` algorithm.
 
-### Cost Function for Regulization
+### Cost Function for Regularization
+
+If we have overfitting from our `hypothesis function`, for example like in figure 3, we can reduce the weight that some of the terms in our function carry by increasing their cost.
+<br>
+For example, let's say we wanted to make the following function more quadratic:<br>
+θ<sub>0</sub> + θ<sub>1</sub>x + θ<sub>2</sub>x<sup>2</sup> + θ<sub>3</sub>x<sup>3</sup> + θ<sub>4</sub>x<sup>4</sup><br>
+We'll want to eliminate the influence of θ<sub>3</sub>x<sup>3</sup> and θ<sub>4</sub>x<sup>4</sup>, without actually getting rid of these features or changing the form of our hypothesis, we can instead modify our cost function.<br>
+
+<p align = 'center'><img src = 'Formulas/regularized_cost_func_ex.PNG'></p><br>
+
+We've added two extra terms at the end to inflate the cost of θ<sub>3</sub> and θ<sub>4</sub>. Now, in order for the cost function to get close to `0`, we will have to reduce the values θ<sub>3</sub> and θ<sub>4</sub> to near `0`. This will in turn greatly reduce the values of θ<sub>3</sub>x<sup>3</sup> and θ<sub>4</sub>x<sup>4</sup> in our `hypothesis function`.<br>
+
+<p align = 'center'><img src = 'Formulas/fig_4.PNG'></p><br>
+
+As a result we see that the new `H(x)` looks like a quadratic function but fits the data better compared to _figure 3_ due to extra small terms θ<sub>3</sub>x<sup>3</sup> and θ<sub>4</sub>x<sup>4</sup>.
+
+<br>
+<br>
+
+We can also regularize all of our parameters in a single summation as:
+<br>
+<p align = 'center'><img src = 'Formulas/regularized_cost_func.PNG'></p><br>
+
+The `λ`, or `lambda`, is regularization parameter. It determines how much costs of our `θ` parameters are inflated.<br>
+Using the above cost function with the extra summation, we can smooth the output of our hypothesis function to reduce overfitting. If `lambda` is choosen to be too large, it may smooth our function too much and causing `High bias` or `Underfitting`.
+
+> **Note:**<br>
+> We penalize the parameters from θ<sub>1</sub> .... θ<sub>n</sub> , but we don't penalize θ<sub>0</sub>. We treat this differently.
 
 ------
 
-### Gradient Descent for Regulization
+### Gradient Descent for Regularization
 
 -----
