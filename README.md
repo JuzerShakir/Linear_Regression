@@ -301,3 +301,12 @@ This figure is an instance of `Underfitting`, in which the data clearly shows st
 -----
 
 ### Just Right
+
+If we add an extra feature x<sup>2</sup> and fit `hypothesis function` θ<sub>0</sub> + θ<sub>1</sub>x + θ<sub>2</sub>x<sup>2</sup>, then we obtain a slightly better fit to the data.
+
+<p align = 'center'><img src = 'Formulas/fig_2.PNG'></p>
+
+------
+
+### High Variance
+
