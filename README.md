@@ -284,3 +284,8 @@ This can make `Gradient Descent` run much faster and converge in a lot few itera
 -----
 
 ## Bias - Variance
+
+Consider a problem of predicting `y`. The figure below shows the result of fitting a `hypothesis function` θ<sub>0</sub> + θ<sub>1</sub>x to a dataset.
+
+<p align = 'center'><img src = 'Formulas/fig_1.PNG'></p>
+
