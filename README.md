@@ -21,6 +21,7 @@
     - [High Bias](#high-bias)
     - [Just Right](#just-right)
     - [High Variance](#high-variance)
+        - [Resolving High Variance](#resolving-high-variance)
 
 ## Description
 A Mathematical intuition and quick guide and understanding of how Linear Regression Algorithms works. Given links to other study materials in order to understand the concepts more concretly.
@@ -304,9 +305,33 @@ This figure is an instance of `Underfitting`, in which the data clearly shows st
 
 If we add an extra feature x<sup>2</sup> and fit `hypothesis function` θ<sub>0</sub> + θ<sub>1</sub>x + θ<sub>2</sub>x<sup>2</sup>, then we obtain a slightly better fit to the data.
 
+<br>
+
 <p align = 'center'><img src = 'Formulas/fig_2.PNG'></p>
+
+<br>
 
 ------
 
 ### High Variance
 
+If we add more features, it would intuitively seem that it could perform much better, however there's also a danger in adding too amny features. The result of fitting 4th order polynomial where our `h(x)` is  θ<sub>0</sub> + θ<sub>1</sub>x + θ<sub>2</sub>x<sup>2</sup> + θ<sub>3</sub>x<sup>3</sup> + θ<sub>4</sub>x<sup>4</sup>
+
+<br>
+
+<p align = 'center'><img src = 'Formulas/fig_3.PNG'></p>
+
+<br>
+
+We see that even though the fitted curve passes through the data perfectly, we would not expect this to be a very good predictor of for example housing prices `y` for different areas `x`.
+
+<br>
+
+`Overfitting` or `High Variance`, is caused by `h(x)` function that fits the available data but does not generalize (unable to accurately predict) well to predict new data. It is usually caused by giving too many features or having a complicated `h(x)` function that creates lots of unnecessory curves and angles unrelated to the data.
+
+<br>
+
+#### Resolving High Variance
+
+
+------
