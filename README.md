@@ -18,6 +18,9 @@
     - [Gradeint Descent](#gradient-descent-for-multivariate-linear-regression)
 - [Feature Scaling and Mean Normalization](#feature-scaling-and-mean-normalization)
 - [Bias - Variance](#bias---variance)
+    - [High Bias](#high-bias)
+    - [Just Right](#just-right)
+    - [High Variance](#high-variance)
 
 ## Description
 A Mathematical intuition and quick guide and understanding of how Linear Regression Algorithms works. Given links to other study materials in order to understand the concepts more concretly.
@@ -285,7 +288,16 @@ This can make `Gradient Descent` run much faster and converge in a lot few itera
 
 ## Bias - Variance
 
+### High Bias
+
 Consider a problem of predicting `y`. The figure below shows the result of fitting a `hypothesis function` θ<sub>0</sub> + θ<sub>1</sub>x to a dataset.
 
 <p align = 'center'><img src = 'Formulas/fig_1.PNG'></p>
 
+We see that the data doesn't really lie on a straight line and so the fit is not very good.<br>
+This figure is an instance of `Underfitting`, in which the data clearly shows structure not captured by the model `h(x)`.<br>
+`Underfitting` or `high bias` is when the form of our `h(x)` function maps poorly to the trend of the data. It is usually caused by a function that is too simple or uses too few features.
+
+-----
+
+### Just Right
