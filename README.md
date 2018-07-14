@@ -335,6 +335,15 @@ We see that even though the fitted curve passes through the data perfectly, we w
 
 ## Resolving High Variance
 
+There are 2 main options to address the issue of Overfitting:
+
+- **Regulization**
+    - Keep all features, but reduce the magnitude of parameters θ<sub>j</sub>.
+    - It works well when we have a lot of slightly useful features.
+- **Reduce number of features**
+    - Manually select which features to keep.
+    - Use `model selection` algorithm.
+
 ### Cost Function for Regulization
 
 ------
