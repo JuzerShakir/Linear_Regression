@@ -259,7 +259,7 @@ Where,
 
 ## Feature Scaling and Mean Normalization
 
-We can speed up `Gradient Descent` by having each of our input values in roughly the same range. This is because `0` will descend quickly on small ranges and slowly on large ranges. If we have large ranges, it will oscilate inefficiently down to optimum (minimum) when the variables are very uneven.
+We can speed up `Gradient Descent` by having each of our input values in roughly the same range. This is because `θ` will descend quickly on small ranges and slowly on large ranges. If we have large ranges, it will oscilate inefficiently down to optimum (minimum) when the variables are very uneven.
 
 <br>
 
@@ -376,6 +376,8 @@ Using the above cost function with the extra summation, we can smooth the output
 > We penalize the parameters from θ<sub>1</sub> .... θ<sub>n</sub> , but we don't penalize θ<sub>0</sub>. We treat this differently.
 
 ------
+
+<br>
 
 ### Gradient Descent for Regularization
 
